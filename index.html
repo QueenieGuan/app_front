@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link href="dist/build.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/1.0.3/leaflet.css"> -->
+  <link rel="stylesheet" href="dist/leaflet.css">
+  <!-- <link href="./node_modules/antd-mobile/dist/antd-mobile.css" rel="stylesheet"> -->
+  <link rel="shortcut icon" href="dist/icon.png" type="image/x-icon" />
+  <script src="dist/xlsx.full.min.js"></script>
+  <title>site-select-demo</title>
+  <style>
+    /* 重置antd-mobile popup样式 */
+    .am-picker-popup {
+      background: rgba(0, 0, 0, 0.75) !important;
+    }
+    .am-picker-col-mask {
+      display: none !important;
+    }
+
+    .am-picker-col-item {
+      color: #ffffff !important;
+    }
+    .am-picker-col-indicator {
+      border-top: solid 1px #108ee9 !important;
+      border-bottom: solid 1px #108ee9 !important;
+    }
+    .am-modal-content {
+      background: rgba(0, 0, 0, 0.75) !important;
+      border: solid 2px #FF8C00 !important;
+    }
+    .am-modal-title {
+      color: #ffffff !important;
+    }
+    .am-modal-button-group-h .am-modal-button:first-child {
+      color: #ffffff !important;
+    }
+
+    /* 重置antd-mobile Popover样式 */
+    .am-popover-inner-wrapper{
+      background-color: rgba(6,6,8,0.8) !important;
+    }
+    .am-popover-item-container{
+      background-color: #62bdd6c2 !important;
+      color: #f5f4e8 !important;
+      margin: 3px 0 3px 0 !important;
+      border-radius: 3px !important;
+    }
+
+    /* 重置antd-mobile list样式 */
+    .am-list{
+      width:90% !important;
+      margin-left: 5% !important;
+    }
+    .am-list-body{
+      /* height:36px !important; */
+      border-radius: 5px !important;
+    }
+    .am-list-item{
+      /* min-height:36px !important; */
+      border-radius: 3px;
+    }
+
+    html:not([data-scale]) .am-modal-button-group-h .am-modal-button:last-child {
+      color: #108ee9 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script src="./dist/config.js"></script>
+<script src="./dist/leaflet.js"></script>
+<script src="./dist/build.js"></script>
+<script src="./dist/iconfont.js"></script>
+
+</html>

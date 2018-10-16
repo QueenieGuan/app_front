@@ -1,0 +1,18 @@
+@mixin has-header {
+  margin-top: 50px;
+}
+
+@mixin has-footer {
+  margin-bottom: 50px;
+}
+
+@mixin closeBtnStyle {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 14px;
+  color: #fff;
+  z-index: 10;
+}

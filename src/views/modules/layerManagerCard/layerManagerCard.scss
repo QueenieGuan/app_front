@@ -1,0 +1,57 @@
+@import '../../style/base';
+@import '../../style/variables';
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 220px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  z-index: 499;
+  background: $base-background-color;
+  .title {
+    color: $base-font-color;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  .close_button {
+    @include closeBtnStyle;
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .content {
+    height: auto;
+    overflow-y: scroll;
+    .regions_box, .grids_box {
+      margin: 10px;
+      border: solid 1px #ffffff;
+      border-radius: 5px;
+      .switch_display {
+        margin-left: 10px;
+        z-index: 499;
+      }
+      .switch_hide {
+        display: none;
+      }
+    }
+  }
+  :global {
+    .am-list-item {
+      min-height: auto;
+      background: transparent;
+    }
+    .am-list-item .am-list-line .am-list-content {
+      color: $base-font-color;
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+}

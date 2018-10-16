@@ -1,0 +1,24 @@
+.gradient {
+  background: -webkit-radial-gradient(red, yellow,	#00FF00); /* Safari 5.1 - 6.0 */
+  background: -o-radial-gradient(red, yellow,	#00FF00); /* Opera 11.6 - 12.0 */
+  background: -moz-radial-gradient(red, yellow,	#00FF00); /* Firefox 3.6 - 15 */
+  background: radial-gradient(red, yellow,#00FF00); /* 标准的语法（必须放在最后） */
+  opacity: 0.8;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  -moz-animation: myfirst 1s;	/* Firefox */
+  -webkit-animation: myfirst 1s;	/* Safari 和 Chrome */
+  -o-animation: myfirst 1s;	/* Opera */
+  animation: myfirst 1s;
+  animation-iteration-count: infinite; 
+}
+@keyframes myfirst{
+  to {
+    -ms-transform:scale(2, 2); 	/* IE 9 */
+    -moz-transform:scale(2, 2); 	/* Firefox */
+    -webkit-transform:scale(2, 2); /* Safari 和 Chrome */
+    -o-transform:scale(2, 2); 	/* Opera */
+    transform: scale(2, 2);
+  }
+}

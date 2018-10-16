@@ -1,0 +1,51 @@
+@import '../../style/base';
+@import '../../style/variables';
+.main {
+  margin-right: 5px;
+  height: 40px;
+  .search_section {
+    height: 40px;
+    width: 180px;
+    display: flex; 
+    .searchIcon {
+      width: 36px;
+      height: 40px;
+      color: #ffffff;
+      background: $blue-item-color;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      padding: 8px 8px 8px 10px;
+    }
+    :global {
+      input:not([type=range]) { // 输入框
+        color: #ffffff;
+        font-size: 14px;
+        padding-left: 5px;
+        vertical-align: middle;
+        height: 40px;
+        width: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: none;
+        border: none;
+      }
+      .am-list-item {
+        border: none;
+        width: 144px;
+        min-height: 40px;
+      }
+      .am-list-item.am-input-item {
+        padding-left: 0;
+        padding-right: 0;
+        height: 40px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: $base-background-color;
+      }
+      .am-list-item .am-list-line {
+        height: 40px;
+        padding-right: 0;
+      }
+    }
+  }
+}

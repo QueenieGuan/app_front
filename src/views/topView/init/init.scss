@@ -1,0 +1,105 @@
+@import '../../style/base';
+@import '../../style/variables';
+.main {
+  @include has-footer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  .taskbar {
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    z-index: 499;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    .layer_manager_button {
+      margin-right: 5px;
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      background: $base-background-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .hide_modal {
+    display: none;
+  }
+  .expand_button_show {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $blue-item-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 499;
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .expand_button_hide {
+    display: none;
+  }
+  .exit_button_show {
+    position: absolute;
+    top: 40%;
+    left: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $blue-item-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 499;
+    .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .exit_button_hide {
+    display: none;
+  }
+  :global {
+    .leaflet-left .leaflet-control {
+      margin-left: 5px;
+    }
+    .leaflet-touch .leaflet-bar a {
+      background: $base-background-color;
+      color: $base-font-color;
+    }
+    .leaflet-control-scale-line:not(:first-child) {
+      display: none;
+    }
+    .leaflet-control-scale-line {
+      border: solid 1px #fff;
+      border-radius: 5px;
+      line-height: 20px;
+      font-size: 14px;
+      background: $base-background-color;
+      color: $base-font-color;
+    }
+    .leaflet-right .leaflet-control {
+      display: none;
+    }
+  }
+}
+#map {
+  height: auto;
+  width: 100%;
+  z-index: -1;
+}

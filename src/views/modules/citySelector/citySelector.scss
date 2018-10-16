@@ -1,0 +1,43 @@
+@import '../../style/base';
+@import '../../style/variables';
+.main {
+  height: 40px;
+  .city_box {
+    width: 68px;
+    display: flex;
+    .city_drop_down {
+      width: 16px;
+      height: 40px;
+      background: $base-background-color;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    :global {
+      .am-list-body {       
+        padding-left: 0;
+        background: rgba(53, 27, 27, 0.75);
+      }
+      .am-list-item .am-list-line .am-list-extra {
+        width: 50px;
+        overflow: visible;
+        color: #fff;
+        padding-left: 2px;
+      }
+      .am-list-line {
+        padding-right: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+      .am-list-item {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: $base-background-color;
+        padding-left: 0;
+        min-height: 40px;
+      }
+      .am-list-arrow {
+        display: none;
+      }
+    }
+  }
+}

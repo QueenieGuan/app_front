@@ -1,0 +1,113 @@
+@import '../../style/base';
+@import '../../style/variables';
+.main {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 280px;
+  height: 230px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  z-index: 499;
+  background: $base-background-color;
+  color: $base-font-color;
+  .table {
+    .table_head {
+      display: flex;
+      color: #000;
+      background: #A9A9A9;
+      height: 40px;
+      text-align: center;
+      line-height: 28px;
+      .head_id {
+        width: 40%;
+        margin: 6px auto;
+        border-right: solid 1px #fff;
+      }
+      .head_score {
+        width: 30%;
+        margin: 6px auto;
+        border-right: solid 1px #fff;
+      }
+      .head_compare {
+        width: 30%;
+        margin: 6px auto;
+      }
+    }
+    .table_body {
+      height: 150px;
+      .table_row, .selected_table_row {
+        display: flex;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-bottom: solid 1px #fff;
+        font-size: 16px;
+        .text {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }        
+      }
+      .selected_table_row {
+        background: rgba(64,224,208,0.5);
+      }
+      .id {
+        width: 40%;
+        margin: 2px auto;
+        display: flex;
+        .symbol {
+          border: solid 1px #fff;
+          border-radius: 4px;
+          margin-right: 10px;
+          margin-left: 10px;
+          width: 20px;
+          height: 25px;
+          text-align: center;
+          line-height: 25px;
+        }
+      }
+      .score {
+        width: 30%;
+        margin: 2px auto;
+      }
+      .compare {
+        width: 30%;
+        margin: 2px auto;
+      }
+    }
+  }
+  .pagination {
+    height: 40px;
+    background: #A9A9A9;
+  }
+  .hide_button {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    z-index: 499;
+    .icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  :global {
+    .am-button {
+      color: #000;
+      background: transparent;
+      height: 40px;
+    }
+    .am-flexbox .am-flexbox-item {
+      height: 40px;
+    }
+    .am-pagination-wrap {
+      line-height: 40px;
+    }
+    .am-button-inline {
+      padding: 0 30px;
+    }
+  }
+}

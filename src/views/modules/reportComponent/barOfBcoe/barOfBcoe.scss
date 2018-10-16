@@ -1,0 +1,21 @@
+@import '../../../style/base';
+@import '../../../style/variables';
+.main {
+  position: absolute;
+  left: 2.5%;
+  right: 0;
+  top: 460px;
+  bottom: 0;
+  //margin: auto;
+  width: 95%;
+  height: 360px;
+  border-radius: 10px;
+  overflow-y: scroll;
+  z-index: 499;
+  background: $base-background-color;
+  color: $base-font-color;
+  .bar{
+  	width: 98%;
+  	height:360px;
+  }
+ }

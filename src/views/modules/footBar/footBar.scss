@@ -1,0 +1,37 @@
+@import '../../style/base';
+@import '../../style/variables';
+.container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: $base-background-color;
+  display: flex;
+  align-items: center;
+  .item {
+    display: flex column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px auto; // 左右间距自适应
+    .image {
+      width: 28px;
+      height: 28px;
+      .icon {
+        width: 28px;
+        height: 28px;
+      }
+    }
+    .textOn {
+      font-size: 10px;
+      text-align: center;
+      color: #00FF00;
+    }
+    .textOff {
+      font-size: 10px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+}
